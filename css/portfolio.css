@@ -1,0 +1,436 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding-right: 35px;
+    cursor: pointer
+}
+
+nav ul li:hover {
+    color: #0183ec;
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.row1 .col1,
+.row1 .col2 {
+    width: 50%;
+}
+
+#headline {
+    font-size: 25px;
+    padding-left: 80px;
+}
+
+#profile_picture {
+    border-radius: 15%;
+    width: 80%;
+    display: flex;
+    height: auto;
+}
+
+.row2 {
+    display: flex;
+    background-color: white;
+    color: black;
+}
+
+.row2 .col1,
+.row2 .col2,
+.row2 .col3 {
+    width: 33.33%;
+    padding: 30px;
+}
+
+.row2 h1 {
+    font-size: x-large;
+    font-weight: bold;
+    color: #0183ec;
+}
+
+.row2 h2 {
+    font-size: medium;
+    font-weight: normal;
+    color: black;
+}
+
+#role {
+    font-weight: bold;
+}
+
+.row2 ul {
+    display: block;
+    font-size: small;
+    color: rgb(150, 150, 150);
+    padding-bottom: 20px;
+}
+
+#highlight {
+    color: #0183ec;
+}
+
+#slide_button {
+    display: flex;
+    background-color: lightgray;
+    margin: 0 auto;
+    border: none;
+    border-radius: 100px;
+    padding: 6px;
+}
+
+#dot1,
+#dot2,
+#dot3,
+#dot4,
+#dot5 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0183ec;
+    margin: 2px;
+    transition: transform 0.3s ease;
+}
+
+#exp1,
+#exp2,
+#exp3,
+#edu1,
+#edu2 {
+    height: 270px;
+}
+
+#exp2,
+#exp3,
+#edu2 {
+    display: none;
+}
+
+.dot4,
+.dot5 {
+    height: 8px;
+    width: 8px;
+}
+
+#boldtxt {
+    color: white;
+    background-color: #0183ec;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.row3 {
+    background-color: black;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.row3 h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.projects_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.project-item {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #0183ec;
+    margin: 0px 150px;
+    transition: transform 0.3s ease;
+}
+
+.row3 img {
+    height: 70px;
+}
+
+.row3 .heading {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.project-item:hover {
+    transform: scale(1.1);
+}
+
+.row4 {
+    background-color: black;
+    padding: 0px 110px;
+    margin: 100px 0px;
+    display: flex;
+}
+
+.row4 h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.row4 .col1 {
+    width: 30%;
+}
+
+.row4 .col2 {
+    width: 70%;
+}
+
+.row4 a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.row4 i {
+    font-size: x-large;
+    padding-top: 20px;
+}
+
+.row4 i:hover {
+    transform: scale(1.1);
+    color: #0183ec;
+}
+
+.row4 form input,
+.row4 form textarea {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    background-color: white;
+    color: #0183ec;
+    font-weight: lighter;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.row4 input::placeholder,
+.row4 textarea::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row4 form button {
+    font-size: 18px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0183ec;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(45, 45, 45);
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+/* Media query for screens with a minimum width of 768 pixels and a maximum of 1023 pixels (typical for tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    nav ul {
+        background-color: #0183ec;
+        justify-content: space-around;
+        padding: 10px;
+        border-radius: 100px;
+    }
+
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li:hover {
+        color: white;
+        font-size: medium;
+        font-weight: normal;
+    }
+
+    .row1 {
+        display: block;
+        align-items: center;
+    }
+
+    .row1 .col1,
+    .row1 .col2 {
+        width: 100%;
+    }
+
+    #profile_picture {
+        margin: 0 auto;
+    }
+
+    .row2 {
+        display: block;
+        background-color: white;
+        color: black;
+        text-align: center;
+    }
+
+    .row2 .col1,
+    .row2 .col2,
+    .row2 .col3 {
+        width: auto;
+    }
+
+    .row2 ul {
+        list-style-type: none;
+        font-size: large;
+        color: black;
+        padding: 10px 50px;
+    }
+
+    #exp1,
+    #exp2,
+    #exp3,
+    #edu1,
+    #edu2 {
+        height: auto;
+    }
+
+    .projects_list {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .project-item {
+        margin: 30px 65px;
+    }
+
+    #boldtxt {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .row4 {
+        display: block;
+        text-align: center;
+    }
+
+    .row4 .col1,
+    .row4 .col2 {
+        width: 100%;
+    }
+
+    .row4 .col1 {
+        margin-bottom: 50px;
+    }
+
+}
+
+/* Media query for screens with a minimum width of 1025 pixels (typical for desktops) */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .row1 {
+        display: block;
+        align-items: center;
+    }
+
+    #headline {
+        font-size: 15px;
+        text-align: center;
+        padding: 0px;        
+    }
+
+    .row1 .col1,
+    .row1 .col2 {
+        width: 100%;
+    }
+
+    #profile_picture {
+        margin: 0 auto;
+    }
+
+    .row2 {
+        display: block;
+        background-color: white;
+        color: black;
+        text-align: center;
+    }
+
+    .row2 .col1,
+    .row2 .col2,
+    .row2 .col3 {
+        width: auto;
+    }
+
+    .row2 ul {
+        list-style-type: none;
+        font-size: large;
+        color: black;
+        padding: 10px 0px;
+    }
+
+    #exp1,
+    #exp2,
+    #exp3,
+    #edu1,
+    #edu2 {
+        height: auto;
+    }
+
+    .projects_list {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .project-item {
+        margin: 30px 30px;
+    }
+
+    #boldtxt {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .row4 {
+        display: block;
+        text-align: center;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    .row4 .col1,
+    .row4 .col2 {
+        width: 100%;
+    }
+
+    .row4 .col1 {
+        margin-bottom: 50px;
+    }
+
+    .row4 form input,
+    .row4 form textarea {
+        width: 80%;
+    }
+}

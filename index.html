@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Personal Portfolio/css/portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/bf66214ad3.js" crossorigin="anonymous"></script>
+    <title>Prajval Patel</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><span id="highlight">P</span>rajval</li>
+                <li onclick="scrollToSection('row2')">Work Experience</li>
+                <li onclick="scrollToSection('row2')">Skills</li>
+                <li onclick="scrollToSection('row2')">Education</li>
+                <li onclick="scrollToSection('row3')">Projects</li>
+                <li onclick="scrollToSection('row4')">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="row1">
+            <div class="col1">
+                <div id="headline">
+                    <h1>
+                        Hey&#x1F44B;, My name is<br />
+                        <span id="highlight">PRAJVAL PATEL</span>.<br />
+                        I'm a Full Stack<br />
+                        Software Developer<br />
+                    </h1>
+                </div>                
+            </div>
+            <div class="col2">
+                <img src="../Personal Portfolio/images/IMG_0308.jpeg" id="profile_picture" />
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="col1">
+                <div id="exp1">
+                    <h1>&#x1F4BC; Work Experience</h1>
+                    <h2><span id="role">Software Engineer</span> | MRI Software</h2>
+                    <h2>&#x1F4C5;<i>July 2022 - Aug 2023</i></h2>
+                    <ul>
+                        <li>Managed projects using Jira and MS Azure DevOps.</li>
+                        <li>
+                            Demonstrated proficiency in Git and SourceTree to establish a
+                            robust version control practice, reducing code conflicts and
+                            improving collaboration among team members.
+                        </li>
+                        <li>
+                            Leveraged tools like Axios, Twilio, High Charts and Fast Reports
+                            to enhance project capabilities.
+                        </li>
+                    </ul>
+                </div>
+                <div id="exp2">
+                    <h1>&#x1F4BC; Work Experience</h1>
+                    <h2>
+                        <span id="role">Software Developer Intern</span> | Casepoint LLC
+                    </h2>
+                    <h2>&#x1F4C5;<i>Jan 2022 - June 2022</i></h2>
+                    <ul>
+                        <li>
+                            Practical experience with the Scrum framework of Agile
+                            Methodology.
+                        </li>
+                        <li>
+                            Designed and developed a project centred on RESTful APIs using
+                            LINQ, resulting in optimised data retrieval and manipulation.
+                        </li>
+                    </ul>
+                </div>
+                <div id="exp3">
+                    <h1>&#x1F4BC; Work Experience</h1>
+                    <h2>
+                        <span id="role">Web Developer Intern</span> | Suven Technologies
+                    </h2>
+                    <h2>&#x1F4C5;<i>July 2021 - Aug 2021</i></h2>
+                    <ul>
+                        <li>
+                            I crafted a diverse portfolio of static and dynamic websites,
+                            honing my skills in both webpage development and understanding
+                            the nuances between static and dynamic designs.
+                        </li>
+                        <li>
+                            This project facilitated a comprehensive grasp of the
+                            distinctions between websites and web pages.
+                        </li>
+                    </ul>
+                </div>
+                <button id="slide_button">
+                    <div id="dot1"></div>
+                    <div id="dot2"></div>
+                    <div id="dot3"></div>
+                </button>
+            </div>
+            <div class="col2">
+                <h1>&#x1F4BB; Skills</h1>
+                <h2>
+                    <span id="role">PROGRAMMING</span><br />
+                    C# | HTML | CSS | JS | C | Java | Python<br />
+                    <span id="role">DATABASE</span><br />
+                    MySQL | PostgreSQL<br />
+                    <span id="role">FRAMEWORKS AND LIBRARIES</span><br />
+                    ASP.Net Core | ASP.Net MVC | Entity Core | VueJS | Bootstrap | Kendo
+                    UI | Element UI<br />
+                    <span id="role">SOFTWARE TOOLS</span><br />
+                    Visual Studio | VS Code | SSMS | Git | Azure | Jira | SourceTree
+                </h2>
+            </div>
+            <div class="col3">
+                <div id="edu1">
+                    <h1>&#x1F393; Education</h1>
+                    <h2>
+                        <span id="role">Post Graduation Certification</span> | Full Stack
+                        Software Development
+                    </h2>
+                    <h2>&#x1F4C5;<i>Sept 2023 - May 2025</i></h2>
+                    <p id="boldtxt">GPA - 3.5 out of 4</p>
+                </div>
+                <div id="edu2">
+                    <h1>&#x1F393; Education</h1>
+                    <h2>
+                        <span id="role">Bachelor's of Engineering</span> | Information
+                        Technology
+                    </h2>
+                    <h2>&#x1F4C5;<i>Sept 2018 - May 2022</i></h2>
+                    <p id="boldtxt">GPA - 8.5 out of 10</p>
+                </div>
+                <button id="slide_button">
+                    <div id="dot4"></div>
+                    <div id="dot5"></div>
+                </button>
+            </div>
+        </div>
+        <div class="row3">
+            <h1>Projects</h1>
+            <div class="projects_list">
+                <div class="project-item">
+                    <img src="../Personal Portfolio/images/trackerflow.png" alt="trackerflow">
+                    <p class="heading">Tracker Flow - An Asset Tracking System</p>
+                    <p class="description">
+                        TrackerFlow is developed to maintain the tracking reports of all the assets available in the
+                        office premises of a company or an organization. This tracking is done on a weekly/monthly
+                        basis. The responsible person will perform the audit of assets and make a note if any assets are
+                        missing from their place than an alert mail will be sent to the authorities regarding the same.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <img src="../Personal Portfolio/images/soleheaven.png" alt="soleheaven">
+                    <p class="heading">Sole Heaven - Online Shoe Store</p>
+                    <p class="description">
+                        The primary purpose of Sole Heaven website is to provide a platform for customers to browse,
+                        select, and purchase a variety of footwear products over the internet. The website serves as a
+                        virtual store for the shoe retailer and aims to offer a convenient and efficient shopping
+                        experience for customers.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="col1">
+                <h1>Contact Me</h1>
+                <a href="mailto:prajval1420@gmail.com">&#x1F4E9; prajval1420@gmail.com</a><br>
+                <a href="https://www.linkedin.com/in/prajval1420/"><i class="fas fab fa-linkedin"></i></a>
+                <a href="https://github.com/Prajval14" style="padding-left: 20px;"><i
+                        class="fas fab fab fa-github"></i></a>
+            </div>
+            <div class="col2">
+                <form action="submit_form.php" method="post">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; 2024 | Prajval Patel
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var expDots = document.querySelectorAll("#dot1, #dot2, #dot3");
+            var eduDots = document.querySelectorAll("#dot4, #dot5");
+            var experiences = document.querySelectorAll("#exp1, #exp2, #exp3");
+            var educations = document.querySelectorAll("#edu1, #edu2");
+
+            handleDots(expDots, experiences);
+            handleDots(eduDots, educations);
+        });
+        
+        function scrollToSection(sectionId) {
+            var section = document.querySelector("." + sectionId);
+
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+
+        function handleDots(dots, sections) {
+            dots.forEach(function (dot, index) {
+                dot.addEventListener("mouseover", function () {
+                    sections.forEach(function (section) {
+                        section.style.display = "none";
+                    });
+                    sections[index].style.display = "block";
+                    dots[index].style.transform = "scale(1.1)";
+                });
+
+                dot.addEventListener("mouseout", function () {
+                    dots.forEach(function (dot) {
+                        dot.style.transform = "scale(1.0)";
+                    });
+                });
+            });
+        }
+
+
+    </script>
+</body>
+
+</html>
