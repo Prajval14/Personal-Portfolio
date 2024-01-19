@@ -44,14 +44,15 @@ nav ul li:first-child {
 
 #headline {
     font-size: 25px;
-    padding-left: 80px;
+    padding-left: 200px;
 }
 
 #profile_picture {
     border-radius: 15%;
-    width: 80%;
+    width: 60%;
     display: flex;
     height: auto;
+    margin-left: 100px;
 }
 
 .row2 {
@@ -281,6 +282,11 @@ footer {
     .row1 .col1,
     .row1 .col2 {
         width: 100%;
+    }
+
+    #headline {
+        padding: 0;
+        text-align: center;
     }
 
     #profile_picture {

@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Personal Portfolio/css/portfolio.css" />
+    <link rel="stylesheet" href="./portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/bf66214ad3.js" crossorigin="anonymous"></script>
+    <script src="./portfolio.js"></script>
     <title>Prajval Patel</title>
 </head>
 
@@ -38,7 +39,7 @@
                 </div>                
             </div>
             <div class="col2">
-                <img src="../Personal Portfolio/images/IMG_0308.jpeg" id="profile_picture" />
+                <img src="./IMG_0308.jpeg" id="profile_picture" />
             </div>
         </div>
 
@@ -145,7 +146,7 @@
             <h1>Projects</h1>
             <div class="projects_list">
                 <div class="project-item">
-                    <img src="../Personal Portfolio/images/trackerflow.png" alt="trackerflow">
+                    <img src="./trackerflow.png" alt="trackerflow">
                     <p class="heading">Tracker Flow - An Asset Tracking System</p>
                     <p class="description">
                         TrackerFlow is developed to maintain the tracking reports of all the assets available in the
@@ -155,7 +156,7 @@
                     </p>
                 </div>
                 <div class="project-item">
-                    <img src="../Personal Portfolio/images/soleheaven.png" alt="soleheaven">
+                    <img src="./soleheaven.png" alt="soleheaven">
                     <p class="heading">Sole Heaven - Online Shoe Store</p>
                     <p class="description">
                         The primary purpose of Sole Heaven website is to provide a platform for customers to browse,
@@ -187,45 +188,6 @@
     <footer>
         Copyright &copy; 2024 | Prajval Patel
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var expDots = document.querySelectorAll("#dot1, #dot2, #dot3");
-            var eduDots = document.querySelectorAll("#dot4, #dot5");
-            var experiences = document.querySelectorAll("#exp1, #exp2, #exp3");
-            var educations = document.querySelectorAll("#edu1, #edu2");
-
-            handleDots(expDots, experiences);
-            handleDots(eduDots, educations);
-        });
-        
-        function scrollToSection(sectionId) {
-            var section = document.querySelector("." + sectionId);
-
-            if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
-            }
-        }
-
-        function handleDots(dots, sections) {
-            dots.forEach(function (dot, index) {
-                dot.addEventListener("mouseover", function () {
-                    sections.forEach(function (section) {
-                        section.style.display = "none";
-                    });
-                    sections[index].style.display = "block";
-                    dots[index].style.transform = "scale(1.1)";
-                });
-
-                dot.addEventListener("mouseout", function () {
-                    dots.forEach(function (dot) {
-                        dot.style.transform = "scale(1.0)";
-                    });
-                });
-            });
-        }
-
-
-    </script>
 </body>
 
 </html>
