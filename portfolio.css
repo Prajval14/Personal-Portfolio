@@ -355,6 +355,10 @@ footer {
         margin: 30px 65px;
     }
 
+    .project-item:hover {
+        transform: scale(1.0);
+    }
+
     #boldtxt {
         margin: 0 auto;
         margin-bottom: 20px;
@@ -437,6 +441,10 @@ footer {
 
     .project-item {
         margin: 30px 30px;
+    }
+
+    .project-item:hover {
+        transform: scale(1.0);
     }
 
     #boldtxt {
