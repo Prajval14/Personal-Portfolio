@@ -17,7 +17,7 @@
     <header>
         <nav>
             <ul>
-                <li><span id="highlight">P</span>rajval</li>
+                <li><span id="highlight1">P</span>rajval</li>
                 <li onclick="scrollToSection('row2')">Work Experience</li>
                 <li onclick="scrollToSection('row2')">Skills</li>
                 <li onclick="scrollToSection('row2')">Education</li>
@@ -32,7 +32,7 @@
                 <div id="headline">
                     <h1>
                         Hey&#x1F44B;, My name is<br />
-                        <span id="highlight">PRAJVAL PATEL</span>.<br />
+                        <span id="highlight2">PRAJVAL PATEL</span>.<br />
                         I'm a Full Stack<br />
                         Software Developer<br />
                     </h1>
@@ -186,14 +186,15 @@
                 <form action="submit_form.php" method="post">
                     <input type="text" id="name" name="name" placeholder="Your Name" required><br>
                     <input type="email" id="email" name="email" placeholder="Your Email" required><br>
-                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea><br>
-                    <button type="submit">Submit</button>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea><br>
+                    <div id="counter">Characters left: <span id="charCount"></span></div>
+                    <button type="submit" id="submit">Submit</button>
                 </form>
             </div>
         </div>
     </main>
     <footer>
-        Copyright &copy; 2024 | Prajval Patel
+        Copyright &copy; 2024 | Prajval Patel <span id="currentDate"></span>
     </footer>
 </body>
 

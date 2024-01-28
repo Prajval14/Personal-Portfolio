@@ -91,10 +91,6 @@ nav ul li:first-child {
     padding-bottom: 20px;
 }
 
-#highlight {
-    color: #0183ec;
-}
-
 #slide_button {
     display: flex;
     background-color: lightgray;
@@ -273,6 +269,15 @@ nav ul li:first-child {
     font-weight: bold;
 }
 
+#message {
+    position: relative;
+}
+
+#counter {
+    position: absolute;
+    right: 93px;
+}
+
 #unilogo1 {
     width: 150px;
     margin: 0 auto;
@@ -388,6 +393,12 @@ footer {
         margin-bottom: 50px;
     }
 
+    #counter {
+        position: relative;
+        right: 0px;
+        padding-bottom: 20px;
+    }
+
 }
 
 /* Media query for screens with a max width of 768 pixels (typical for mobiles) */
@@ -489,5 +500,11 @@ footer {
 
     #unilogo2 {
         width: 300px;
+    }
+    
+    #counter {
+        position: relative;
+        right: 0px;
+        padding-bottom: 20px;
     }
 }
