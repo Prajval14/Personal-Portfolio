@@ -71,7 +71,7 @@ function updateCharacterCount(textarea, textareaMaxLength, counterElement) {
 
 //Function to validate form on submit
 function submitButtonFunction(textarea, textareaMaxLength) {
-    if(textarea.value.length != textareaMaxLength) {
+    if(textarea.value.length > textareaMaxLength) {
         window.alert('Please enter a short message')
     }
 }
