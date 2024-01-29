@@ -60,6 +60,13 @@ function updateCharacterCount(textarea, textareaMaxLength, counterElement) {
     var charactersLeft = maxLength - currentLength;
 
     counterElement.innerText = charactersLeft;
+
+    if(charactersLeft < 0) {
+        counterElement.style.color = 'red'
+    }
+    else {
+        counterElement.style.color = ''
+    }
 }
 
 //Function to validate form on submit
