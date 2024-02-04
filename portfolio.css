@@ -288,6 +288,11 @@ nav ul li:first-child {
     margin: 0 auto;
 }
 
+#submit:hover {
+    color: #0183ec;
+    background-color: white;
+}
+
 footer {
     background-color: rgb(45, 45, 45);
     text-align: center;
@@ -396,6 +401,7 @@ footer {
     #counter {
         position: relative;
         right: 0px;
+        padding-bottom: 20px;
     }
 
 }
@@ -504,5 +510,10 @@ footer {
     #counter {
         position: relative;
         right: 0px;
+        padding-bottom: 20px;
+    }
+
+    footer {
+        font-size: small;
     }
 }
