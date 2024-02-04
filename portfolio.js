@@ -34,6 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Function to navigate through different sections
+function scrollToSection(className) {
+    const targetElement = document.querySelector(className);
+    if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
 // Function to toggle visibility for experience and education sections
 function handleDots(dots, sections) {
     dots.forEach(function (dot, index) {
