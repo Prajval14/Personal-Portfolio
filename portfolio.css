@@ -253,6 +253,11 @@ nav ul li:first-child {
     padding: 15px;
 }
 
+.row4 form input:focus {
+    border: none;
+    outline: none;
+}
+
 .row4 input::placeholder,
 .row4 textarea::placeholder {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
